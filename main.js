@@ -51,7 +51,7 @@ class Blockchain{
 }
 
 let seanCoin = new Blockchain();
-seanCoin.addBlock(new Block(1, "10/07/2017", { amount: 4 }))
-seanCoin.addBlock(new Block(2, "12/07/2017", { amount: 10 }))
+seanCoin.addBlock(new Block(1, "12/12/2017", { amount: 5 }))
+seanCoin.addBlock(new Block(2, "12/20/2017", { amount: 10 }))
 
 console.log(JSON.stringify(seanCoin, null, 4));
