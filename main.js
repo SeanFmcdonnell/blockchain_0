@@ -55,3 +55,9 @@ seanCoin.addBlock(new Block(1, "12/12/2017", { amount: 5 }))
 seanCoin.addBlock(new Block(2, "12/20/2017", { amount: 10 }))
 
 console.log(JSON.stringify(seanCoin, null, 4));
+
+if (true ==! while (true) {
+
+}) {
+
+}
