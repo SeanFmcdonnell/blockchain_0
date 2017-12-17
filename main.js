@@ -58,4 +58,12 @@ console.log(JSON.stringify(seanCoin, null, 4));
 
 addBlock.console.warn(// TODO: maximize the blocks);
 if
-  Blockchain = maximize 
+  Blockchain = maximize
+
+  switch (expression) {
+    case expression:
+
+      break;
+    default:
+
+  }
