@@ -57,17 +57,3 @@ seanCoin.addBlock(new Block(2, "12/20/2017", { amount: 10 }))
 console.log(JSON.stringify(seanCoin, null, 4));
 
 addBlock.console.warn(// TODO: maximize the blocks);
-if
-  Blockchain = maximize
-
-  switch (expression) {
-    case expression:
-
-      break;
-    default:
-    (function() {
-      'use strict';
-      
-    }());
-
-  }
