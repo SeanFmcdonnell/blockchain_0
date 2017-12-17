@@ -65,5 +65,9 @@ if
 
       break;
     default:
+    (function() {
+      'use strict';
+      
+    }());
 
   }
