@@ -1,59 +1,22 @@
-const SHA256 = require('crypto-js/SHA256');
+class Blockchain(object):
+    def __init__(self):
+        self.chain = []
+        self.current_transactions = []
 
-class Block{
-  constructor(index, timestamp, data, previousHash = ''){
-    this.index = index;
-    this.timestamp = timestamp;
-    this.data = data;
-    this.previousHash = previousHash;
-    this.hash = this.calculateHash();
-  }
+    def new_block(self):
+        # Creates a new Block and adds it to the chain
+        pass
 
-  calculateHash(){
-    return SHA256(this.index + this.previousHash + this.timestamp + JSON.stringify(this.data)).toString();
-  }
-}
+    def new_transaction(self):
+        # Adds a new transaction to the list of transactions
+        pass
 
-class Blockchain{
-  constructor(){
-    this.chain = [this.createGenesisBlock()];
+    @staticmethod
+    def hash(block):
+        # Hashes a Block
+        pass
 
-  }
-
-  createGenesisBlock(){
-    return new Block(0, "12/12/2017", "Genesis block", "0");
-  }
-
-  getLatestBlock(){
-    return this.chain[this.chain.length - 1];
-  }
-
-  addBlock(newBlock){
-    newBlock.previousHash = this.getLatestBlock().hash;
-    newBlock.hash = newBlock.calculateHash();
-    this.chain.push(newBlock);
-  }
-
-  isChainValid(){
-      for(let i = i; i < this.chain.length; i++){
-        const currentBlock = this.chain[i];
-        const previousBlock = this.chain[i - 1];
-
-        if(currentBlock.hash !== currentBlock.calculateHash()){
-          return false;
-        }
-        if(currentBlock.previousHash !== previousBlock.hash){
-          return false;
-        }
-      }
-      return true;
-  }
-}
-
-let seanCoin = new Blockchain();
-seanCoin.addBlock(new Block(1, "12/12/2017", { amount: 5 }))
-seanCoin.addBlock(new Block(2, "12/20/2017", { amount: 10 }))
-
-console.log(JSON.stringify(seanCoin, null, 4));
-
-addBlock.console.warn(// TODO: maximize the blocks);
+    @property
+    def last_block(self):
+        # Returns the last Block in the chain
+        pass
